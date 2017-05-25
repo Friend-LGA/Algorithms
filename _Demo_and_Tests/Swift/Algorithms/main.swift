@@ -28,6 +28,3 @@
 //
 
 import Foundation
-
-var array: [Int] = []
-array.removeSubrange(0...1)

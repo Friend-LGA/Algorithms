@@ -16,7 +16,7 @@
         return NSNotFound;
     }
 
-    for (NSUInteger i=0; i<array.count; i++) {
+    for (NSUInteger i = 0; i < array.count; i++) {
         if (object == array[i]) {
             return i;
         }
@@ -32,7 +32,7 @@
 
     NSMutableArray *result = [NSMutableArray new];
 
-    for (NSUInteger i=0; i<array.count; i++) {
+    for (NSUInteger i = 0; i < array.count; i++) {
         if (object == array[i]) {
             [result addObject:@(i)];
         }
@@ -48,7 +48,7 @@
         return NSNotFound;
     }
 
-    for (NSUInteger i=0; i<array.count; i++) {
+    for (NSUInteger i = 0; i < array.count; i++) {
         if ([object isEqualTo:array[i]]) {
             return i;
         }
@@ -64,7 +64,7 @@
 
     NSMutableArray *result = [NSMutableArray new];
 
-    for (NSUInteger i=0; i<array.count; i++) {
+    for (NSUInteger i = 0; i < array.count; i++) {
         if ([object isEqualTo:array[i]]) {
             [result addObject:@(i)];
         }

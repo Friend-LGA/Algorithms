@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A08C9111ED6098A001781BB /* BidirectionalBubbleSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A08C90F1ED6098A001781BB /* BidirectionalBubbleSortTests.m */; };
 		4A1A0AA01ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A0A9F1ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m */; };
 		4A76684A1ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7668491ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m */; };
-		4A7668521ED20B07000A3D37 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7668511ED20B07000A3D37 /* BinarySearch.m */; };
-		4A7668531ED20B07000A3D37 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7668511ED20B07000A3D37 /* BinarySearch.m */; };
 		4A7668561ED212BC000A3D37 /* BinarySearchInPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7668551ED212BC000A3D37 /* BinarySearchInPlaceTests.m */; };
+		4A9FEB2A1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */; };
+		4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */; };
+		4A9FEB2E1ED75A0D00B39236 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB2D1ED75A0D00B39236 /* BinarySearch.m */; };
+		4A9FEB2F1ED75A0D00B39236 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB2D1ED75A0D00B39236 /* BinarySearch.m */; };
+		4A9FEB321ED75A1300B39236 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB311ED75A1300B39236 /* BubbleSort.m */; };
+		4A9FEB331ED75A1300B39236 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB311ED75A1300B39236 /* BubbleSort.m */; };
+		4A9FEB361ED75A2900B39236 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB351ED75A2900B39236 /* LinearSearch.m */; };
+		4A9FEB371ED75A2900B39236 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB351ED75A2900B39236 /* LinearSearch.m */; };
+		4AA076301ED5ECF600F0461E /* BubbleSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0762F1ED5ECF600F0461E /* BubbleSortTests.m */; };
 		4AFF91F31ECCD815004B5A25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF91F21ECCD815004B5A25 /* main.m */; };
-		4AFF91FF1ECCDA38004B5A25 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF91FE1ECCDA38004B5A25 /* LinearSearch.m */; };
 		4AFF92501ECCDCF0004B5A25 /* LinearSearchObjectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF924F1ECCDCF0004B5A25 /* LinearSearchObjectsTests.m */; };
-		4AFF92511ECCE0FE004B5A25 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF91FE1ECCDA38004B5A25 /* LinearSearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,15 +37,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A08C90F1ED6098A001781BB /* BidirectionalBubbleSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BidirectionalBubbleSortTests.m; sourceTree = "<group>"; };
 		4A1A0A9F1ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchNotInPlaceTests.m; sourceTree = "<group>"; };
 		4A7668491ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearSearchEqualObjectsTests.m; sourceTree = "<group>"; };
-		4A7668501ED20B07000A3D37 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinarySearch.h; path = "../../../Binary Search/Objective-C/BinarySearch.h"; sourceTree = "<group>"; };
-		4A7668511ED20B07000A3D37 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BinarySearch.m; path = "../../../Binary Search/Objective-C/BinarySearch.m"; sourceTree = "<group>"; };
 		4A7668551ED212BC000A3D37 /* BinarySearchInPlaceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchInPlaceTests.m; sourceTree = "<group>"; };
+		4A9FEB281ED75A0700B39236 /* BidirectionalBubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BidirectionalBubbleSort.h; path = "../../../Bidirectional_Bubble_Sort/Objective-C/BidirectionalBubbleSort.h"; sourceTree = "<group>"; };
+		4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BidirectionalBubbleSort.m; path = "../../../Bidirectional_Bubble_Sort/Objective-C/BidirectionalBubbleSort.m"; sourceTree = "<group>"; };
+		4A9FEB2C1ED75A0D00B39236 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinarySearch.h; path = "../../../Binary_Search/Objective-C/BinarySearch.h"; sourceTree = "<group>"; };
+		4A9FEB2D1ED75A0D00B39236 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BinarySearch.m; path = "../../../Binary_Search/Objective-C/BinarySearch.m"; sourceTree = "<group>"; };
+		4A9FEB301ED75A1300B39236 /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BubbleSort.h; path = "../../../Bubble_Sort/Objective-C/BubbleSort.h"; sourceTree = "<group>"; };
+		4A9FEB311ED75A1300B39236 /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BubbleSort.m; path = "../../../Bubble_Sort/Objective-C/BubbleSort.m"; sourceTree = "<group>"; };
+		4A9FEB341ED75A2900B39236 /* LinearSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinearSearch.h; path = "../../../Linear_Search/Objective-C/LinearSearch.h"; sourceTree = "<group>"; };
+		4A9FEB351ED75A2900B39236 /* LinearSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinearSearch.m; path = "../../../Linear_Search/Objective-C/LinearSearch.m"; sourceTree = "<group>"; };
+		4AA0762F1ED5ECF600F0461E /* BubbleSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSortTests.m; sourceTree = "<group>"; };
 		4AFF91EF1ECCD815004B5A25 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFF91F21ECCD815004B5A25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4AFF91FD1ECCDA38004B5A25 /* LinearSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinearSearch.h; path = "../../../Linear Search/Objective-C/LinearSearch.h"; sourceTree = "<group>"; };
-		4AFF91FE1ECCDA38004B5A25 /* LinearSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinearSearch.m; path = "../../../Linear Search/Objective-C/LinearSearch.m"; sourceTree = "<group>"; };
 		4AFF92461ECCDCAE004B5A25 /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFF924A1ECCDCAE004B5A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AFF924F1ECCDCF0004B5A25 /* LinearSearchObjectsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearSearchObjectsTests.m; sourceTree = "<group>"; };
@@ -63,11 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A08C90A1ED60433001781BB /* Bidirectional Bubble Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A08C90F1ED6098A001781BB /* BidirectionalBubbleSortTests.m */,
+			);
+			name = "Bidirectional Bubble Sort";
+			sourceTree = "<group>";
+		};
 		4A76684F1ED20AA3000A3D37 /* Binary Search */ = {
 			isa = PBXGroup;
 			children = (
-				4A7668501ED20B07000A3D37 /* BinarySearch.h */,
-				4A7668511ED20B07000A3D37 /* BinarySearch.m */,
+				4A9FEB2C1ED75A0D00B39236 /* BinarySearch.h */,
+				4A9FEB2D1ED75A0D00B39236 /* BinarySearch.m */,
 			);
 			name = "Binary Search";
 			sourceTree = "<group>";
@@ -79,6 +99,32 @@
 				4A1A0A9F1ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m */,
 			);
 			name = "Binary Search";
+			sourceTree = "<group>";
+		};
+		4AA076291ED5E77700F0461E /* Bubble Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A9FEB301ED75A1300B39236 /* BubbleSort.h */,
+				4A9FEB311ED75A1300B39236 /* BubbleSort.m */,
+			);
+			name = "Bubble Sort";
+			sourceTree = "<group>";
+		};
+		4AA0762E1ED5EC6000F0461E /* Bubble Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0762F1ED5ECF600F0461E /* BubbleSortTests.m */,
+			);
+			name = "Bubble Sort";
+			sourceTree = "<group>";
+		};
+		4AA076311ED5F53B00F0461E /* Bidirectional Bubble Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A9FEB281ED75A0700B39236 /* BidirectionalBubbleSort.h */,
+				4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */,
+			);
+			name = "Bidirectional Bubble Sort";
 			sourceTree = "<group>";
 		};
 		4AFF91E61ECCD815004B5A25 = {
@@ -102,7 +148,9 @@
 		4AFF91F11ECCD815004B5A25 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				4AA076311ED5F53B00F0461E /* Bidirectional Bubble Sort */,
 				4A76684F1ED20AA3000A3D37 /* Binary Search */,
+				4AA076291ED5E77700F0461E /* Bubble Sort */,
 				4AFF91F91ECCD935004B5A25 /* Linear Search */,
 				4AFF91F21ECCD815004B5A25 /* main.m */,
 			);
@@ -112,8 +160,8 @@
 		4AFF91F91ECCD935004B5A25 /* Linear Search */ = {
 			isa = PBXGroup;
 			children = (
-				4AFF91FD1ECCDA38004B5A25 /* LinearSearch.h */,
-				4AFF91FE1ECCDA38004B5A25 /* LinearSearch.m */,
+				4A9FEB341ED75A2900B39236 /* LinearSearch.h */,
+				4A9FEB351ED75A2900B39236 /* LinearSearch.m */,
 			);
 			name = "Linear Search";
 			sourceTree = "<group>";
@@ -121,7 +169,9 @@
 		4AFF92471ECCDCAE004B5A25 /* AlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A08C90A1ED60433001781BB /* Bidirectional Bubble Sort */,
 				4A7668541ED2126F000A3D37 /* Binary Search */,
+				4AA0762E1ED5EC6000F0461E /* Bubble Sort */,
 				4AFF924E1ECCDCD8004B5A25 /* Linear Search */,
 				4AFF924A1ECCDCAE004B5A25 /* Info.plist */,
 			);
@@ -226,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AFF91FF1ECCDA38004B5A25 /* LinearSearch.m in Sources */,
-				4A7668521ED20B07000A3D37 /* BinarySearch.m in Sources */,
 				4AFF91F31ECCD815004B5A25 /* main.m in Sources */,
+				4A9FEB2E1ED75A0D00B39236 /* BinarySearch.m in Sources */,
+				4A9FEB361ED75A2900B39236 /* LinearSearch.m in Sources */,
+				4A9FEB2A1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
+				4A9FEB321ED75A1300B39236 /* BubbleSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,10 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7668531ED20B07000A3D37 /* BinarySearch.m in Sources */,
-				4AFF92511ECCE0FE004B5A25 /* LinearSearch.m in Sources */,
+				4AA076301ED5ECF600F0461E /* BubbleSortTests.m in Sources */,
 				4AFF92501ECCDCF0004B5A25 /* LinearSearchObjectsTests.m in Sources */,
+				4A9FEB371ED75A2900B39236 /* LinearSearch.m in Sources */,
+				4A08C9111ED6098A001781BB /* BidirectionalBubbleSortTests.m in Sources */,
 				4A76684A1ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m in Sources */,
+				4A9FEB2F1ED75A0D00B39236 /* BinarySearch.m in Sources */,
+				4A9FEB331ED75A1300B39236 /* BubbleSort.m in Sources */,
+				4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
 				4A7668561ED212BC000A3D37 /* BinarySearchInPlaceTests.m in Sources */,
 				4A1A0AA01ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m in Sources */,
 			);

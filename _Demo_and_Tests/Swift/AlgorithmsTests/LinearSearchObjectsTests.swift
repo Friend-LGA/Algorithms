@@ -7,21 +7,11 @@ import XCTest
 
 class LinearSearchObjectsTests: XCTestCase {
 
-    // Can't initialize array with objects because of Xcode bug
-    var objectsArray: [AnyObject] = []
+    lazy var objectsArray: [AnyObject] = [NSNumber.init(value: -1), NSNumber.init(value: 0), NSNumber.init(value: 1), NSNumber.init(value: 1),
+                                          NSNumber.init(value: -1.5), NSNumber.init(value: 0.5), NSNumber.init(value: 1.5), NSNumber.init(value: 1.5)]
 
     override func setUp() {
         super.setUp()
-
-        objectsArray.append(NSNumber.init(value: -1))
-        objectsArray.append(NSNumber.init(value: 0))
-        objectsArray.append(NSNumber.init(value: 1))
-        objectsArray.append(NSNumber.init(value: 1))
-
-        objectsArray.append(NSNumber.init(value: -1.5))
-        objectsArray.append(NSNumber.init(value: 0.5))
-        objectsArray.append(NSNumber.init(value: 1.5))
-        objectsArray.append(NSNumber.init(value: 1.5))
     }
     
     override func tearDown() {

@@ -16,13 +16,21 @@
 
 - (void)setUp {
     [super setUp];
-
-    self.array = @[@(-1.5), @(-1), @(-0.5), @0, @0.5, @1, @1.5];
 }
 
 - (void)tearDown {
     [super tearDown];
 }
+
+- (NSArray *)array {
+    if (!_array) {
+        _array = @[@(-1.5), @(-1), @(-0.5), @0, @0.5, @1, @1.5];
+    }
+
+    return _array;
+}
+
+#pragma mark -
 
 - (void)testCase1 {
     NSInteger result = [BinarySearch indexOfNumber:@(-1.5) inSortedArray:self.array inPlace:YES];

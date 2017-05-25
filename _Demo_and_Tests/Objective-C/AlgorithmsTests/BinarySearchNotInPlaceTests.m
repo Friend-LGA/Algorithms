@@ -16,13 +16,21 @@
 
 - (void)setUp {
     [super setUp];
-
-    self.array = @[@(-1.5), @(-1), @0, @0.5, @1, @1.5];
 }
 
 - (void)tearDown {
     [super tearDown];
 }
+
+- (NSArray *)array {
+    if (!_array) {
+        _array = @[@(-1.5), @(-1), @(-0.5), @0, @0.5, @1, @1.5];
+    }
+
+    return _array;
+}
+
+#pragma mark -
 
 - (void)testCase1 {
     NSInteger result = [BinarySearch indexOfNumber:@(-1.5) inSortedArray:self.array inPlace:NO];
@@ -37,27 +45,33 @@
 }
 
 - (void)testCase3 {
-    NSInteger result = [BinarySearch indexOfNumber:@0 inSortedArray:self.array inPlace:NO];
+    NSInteger result = [BinarySearch indexOfNumber:@(-0.5) inSortedArray:self.array inPlace:NO];
 
     XCTAssert(result == 2);
 }
 
 - (void)testCase4 {
-    NSInteger result = [BinarySearch indexOfNumber:@0.5 inSortedArray:self.array inPlace:NO];
+    NSInteger result = [BinarySearch indexOfNumber:@0 inSortedArray:self.array inPlace:NO];
 
     XCTAssert(result == 3);
 }
 
 - (void)testCase5 {
-    NSInteger result = [BinarySearch indexOfNumber:@1 inSortedArray:self.array inPlace:NO];
+    NSInteger result = [BinarySearch indexOfNumber:@0.5 inSortedArray:self.array inPlace:NO];
 
     XCTAssert(result == 4);
 }
 
 - (void)testCase6 {
-    NSInteger result = [BinarySearch indexOfNumber:@1.5 inSortedArray:self.array inPlace:NO];
+    NSInteger result = [BinarySearch indexOfNumber:@1 inSortedArray:self.array inPlace:NO];
 
     XCTAssert(result == 5);
+}
+
+- (void)testCase7 {
+    NSInteger result = [BinarySearch indexOfNumber:@1.5 inSortedArray:self.array inPlace:NO];
+
+    XCTAssert(result == 6);
 }
 
 - (void)testNotIncluded {

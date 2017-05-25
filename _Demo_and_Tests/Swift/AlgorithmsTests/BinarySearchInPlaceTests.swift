@@ -7,7 +7,7 @@ import XCTest
 
 class BinarySearchInPlaceTests: XCTestCase {
 
-    let array = [-1.5, -1, -0.5, 0, 0.5, 1, 1.5]
+    lazy var array = [-1.5, -1, -0.5, 0, 0.5, 1, 1.5]
 
     override func setUp() {
         super.setUp()
@@ -16,6 +16,8 @@ class BinarySearchInPlaceTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+
+    // MARK: -
 
     func testCase1() {
         let result = BinarySearch.index(of: -1.5, inSortedArray: array, inPlace: true)

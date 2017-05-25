@@ -9,7 +9,8 @@ import Foundation
 
 struct LinearSearch {
 
-    static func index<T: Equatable>(of value: T?, in array: [T?]?) -> UInt? {
+    /** Complexity is O(n) */
+    static public func index<T: Equatable>(of value: T?, in array: [T?]?) -> UInt? {
         if value == nil || array == nil {
             return nil
         }
@@ -23,7 +24,8 @@ struct LinearSearch {
         return nil
     }
 
-    static func indexes<T: Equatable>(of value: T?, in array: [T?]?) -> [UInt] {
+    /** Complexity is O(n) */
+    static public func indexes<T: Equatable>(of value: T?, in array: [T?]?) -> [UInt] {
         if value == nil || array == nil {
             return []
         }
@@ -41,7 +43,8 @@ struct LinearSearch {
 
     // MARK: - Objects
 
-    static func index(ofObject object: AnyObject?, in array: [AnyObject?]?) -> UInt? {
+    /** Complexity is O(n) */
+    static public func index(ofObject object: AnyObject?, in array: [AnyObject?]?) -> UInt? {
         if object == nil || array == nil {
             return nil
         }
@@ -55,7 +58,8 @@ struct LinearSearch {
         return nil
     }
 
-    static func indexes(ofObject object: AnyObject?, in array: [AnyObject?]?) -> [UInt] {
+    /** Complexity is O(n) */
+    static public func indexes(ofObject object: AnyObject?, in array: [AnyObject?]?) -> [UInt] {
         if object == nil || array == nil {
             return []
         }
@@ -73,7 +77,8 @@ struct LinearSearch {
 
     // MARK: - Equal Objects
 
-    static func index(ofEqualObject object: AnyObject?, in array: [AnyObject?]?) -> UInt? {
+    /** Complexity is O(n) */
+    static public func index(ofEqualObject object: AnyObject?, in array: [AnyObject?]?) -> UInt? {
         if object == nil || array == nil {
             return nil
         }
@@ -87,7 +92,8 @@ struct LinearSearch {
         return nil
     }
 
-    static func indexes(ofEqualObject object: AnyObject?, in array: [AnyObject?]?) -> [UInt] {
+    /** Complexity is O(n) */
+    static public func indexes(ofEqualObject object: AnyObject?, in array: [AnyObject?]?) -> [UInt] {
         if object == nil || array == nil {
             return []
         }

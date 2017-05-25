@@ -16,13 +16,19 @@
 
 - (void)setUp {
     [super setUp];
-
-    self.array = @[@(-1), @0, @1, @1,
-                   @(-1.5), @0.5, @1.5, @1.5];
 }
 
 - (void)tearDown {
     [super tearDown];
+}
+
+- (NSArray *)array {
+    if (!_array) {
+        _array = @[@(-1), @0, @1, @1,
+                   @(-1.5), @0.5, @1.5, @1.5];
+    }
+
+    return _array;
 }
 
 #pragma mark - Integers (point to the same memory address)
