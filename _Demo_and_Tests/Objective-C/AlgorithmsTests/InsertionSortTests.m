@@ -1,17 +1,17 @@
 //
-//  BubbleSortTests.m
+//  InsertionSortTests.m
 //  Algorithms
 //
 
 #import <XCTest/XCTest.h>
-#import "BubbleSort.h"
+#import "InsertionSort.h"
 #import "TestsHelper.h"
 
-@interface BubbleSortTests : XCTestCase
+@interface InsertionSortTests : XCTestCase
 
 @end
 
-@implementation BubbleSortTests
+@implementation InsertionSortTests
 
 - (void)setUp {
     [super setUp];
@@ -26,7 +26,7 @@
 #pragma mark -
 
 - (void)testAscOdd {
-    [BubbleSort sort:TestsHelper.array order:BubbleSortOrderAsc];
+    [InsertionSort sort:TestsHelper.array order:InsertionSortOrderAsc];
 
     XCTAssertEqualObjects(TestsHelper.array, TestsHelper.sortedArrayAsc);
 }
@@ -35,13 +35,13 @@
     [TestsHelper.array addObject:@100];
     [TestsHelper.sortedArrayAsc addObject:@100];
 
-    [BubbleSort sort:TestsHelper.array order:BubbleSortOrderAsc];
+    [InsertionSort sort:TestsHelper.array order:InsertionSortOrderAsc];
 
     XCTAssertEqualObjects(TestsHelper.array, TestsHelper.sortedArrayAsc);
 }
 
 - (void)testDescOdd {
-    [BubbleSort sort:TestsHelper.array order:BubbleSortOrderDesc];
+    [InsertionSort sort:TestsHelper.array order:InsertionSortOrderDesc];
 
     XCTAssertEqualObjects(TestsHelper.array, TestsHelper.sortedArrayDesc);
 }
@@ -50,7 +50,7 @@
     [TestsHelper.array addObject:@100];
     [TestsHelper.sortedArrayDesc insertObject:@100 atIndex:0];
 
-    [BubbleSort sort:TestsHelper.array order:BubbleSortOrderDesc];
+    [InsertionSort sort:TestsHelper.array order:InsertionSortOrderDesc];
 
     XCTAssertEqualObjects(TestsHelper.array, TestsHelper.sortedArrayDesc);
 }
@@ -58,7 +58,7 @@
 - (void)testNilArray {
     NSMutableArray *resultArray = nil;
 
-    [BubbleSort sort:resultArray order:BubbleSortOrderAsc];
+    [InsertionSort sort:resultArray order:InsertionSortOrderAsc];
 
     XCTAssert(resultArray == nil);
 }
@@ -66,7 +66,7 @@
 - (void)testEmptyArray {
     NSMutableArray *resultArray = [NSMutableArray new];
 
-    [BubbleSort sort:resultArray order:BubbleSortOrderAsc];
+    [InsertionSort sort:resultArray order:InsertionSortOrderAsc];
 
     XCTAssertEqualObjects(resultArray, @[]);
 }
@@ -74,7 +74,7 @@
 - (void)testArrayWithOneNumber {
     NSMutableArray *resultArray = [NSMutableArray arrayWithObject:@0];
 
-    [BubbleSort sort:resultArray order:BubbleSortOrderAsc];
+    [InsertionSort sort:resultArray order:InsertionSortOrderAsc];
 
     XCTAssertEqualObjects(resultArray, @[@0]);
 }

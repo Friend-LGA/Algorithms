@@ -20,6 +20,10 @@
 		4A9FEB361ED75A2900B39236 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB351ED75A2900B39236 /* LinearSearch.m */; };
 		4A9FEB371ED75A2900B39236 /* LinearSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB351ED75A2900B39236 /* LinearSearch.m */; };
 		4AA076301ED5ECF600F0461E /* BubbleSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0762F1ED5ECF600F0461E /* BubbleSortTests.m */; };
+		4ACC9C301ED89422003D8328 /* InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC9C2F1ED89422003D8328 /* InsertionSort.m */; };
+		4ACC9C311ED89422003D8328 /* InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC9C2F1ED89422003D8328 /* InsertionSort.m */; };
+		4ACC9C341ED8A336003D8328 /* InsertionSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC9C331ED8A336003D8328 /* InsertionSortTests.m */; };
+		4ACC9C371ED8A40D003D8328 /* TestsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC9C361ED8A40D003D8328 /* TestsHelper.m */; };
 		4AFF91F31ECCD815004B5A25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF91F21ECCD815004B5A25 /* main.m */; };
 		4AFF92501ECCDCF0004B5A25 /* LinearSearchObjectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFF924F1ECCDCF0004B5A25 /* LinearSearchObjectsTests.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,11 @@
 		4A9FEB341ED75A2900B39236 /* LinearSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinearSearch.h; path = "../../../Linear_Search/Objective-C/LinearSearch.h"; sourceTree = "<group>"; };
 		4A9FEB351ED75A2900B39236 /* LinearSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinearSearch.m; path = "../../../Linear_Search/Objective-C/LinearSearch.m"; sourceTree = "<group>"; };
 		4AA0762F1ED5ECF600F0461E /* BubbleSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSortTests.m; sourceTree = "<group>"; };
+		4ACC9C2E1ED89422003D8328 /* InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InsertionSort.h; path = "../../../Insertion_Sort/Objective-C/InsertionSort.h"; sourceTree = "<group>"; };
+		4ACC9C2F1ED89422003D8328 /* InsertionSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InsertionSort.m; path = "../../../Insertion_Sort/Objective-C/InsertionSort.m"; sourceTree = "<group>"; };
+		4ACC9C331ED8A336003D8328 /* InsertionSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertionSortTests.m; sourceTree = "<group>"; };
+		4ACC9C351ED8A40D003D8328 /* TestsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsHelper.h; sourceTree = "<group>"; };
+		4ACC9C361ED8A40D003D8328 /* TestsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestsHelper.m; sourceTree = "<group>"; };
 		4AFF91EF1ECCD815004B5A25 /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFF91F21ECCD815004B5A25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AFF92461ECCDCAE004B5A25 /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +136,23 @@
 			name = "Bidirectional Bubble Sort";
 			sourceTree = "<group>";
 		};
+		4ACC9C2D1ED893E3003D8328 /* Insertion Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4ACC9C2E1ED89422003D8328 /* InsertionSort.h */,
+				4ACC9C2F1ED89422003D8328 /* InsertionSort.m */,
+			);
+			name = "Insertion Sort";
+			sourceTree = "<group>";
+		};
+		4ACC9C321ED8A218003D8328 /* Insertion Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4ACC9C331ED8A336003D8328 /* InsertionSortTests.m */,
+			);
+			name = "Insertion Sort";
+			sourceTree = "<group>";
+		};
 		4AFF91E61ECCD815004B5A25 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +177,7 @@
 				4AA076311ED5F53B00F0461E /* Bidirectional Bubble Sort */,
 				4A76684F1ED20AA3000A3D37 /* Binary Search */,
 				4AA076291ED5E77700F0461E /* Bubble Sort */,
+				4ACC9C2D1ED893E3003D8328 /* Insertion Sort */,
 				4AFF91F91ECCD935004B5A25 /* Linear Search */,
 				4AFF91F21ECCD815004B5A25 /* main.m */,
 			);
@@ -172,8 +199,11 @@
 				4A08C90A1ED60433001781BB /* Bidirectional Bubble Sort */,
 				4A7668541ED2126F000A3D37 /* Binary Search */,
 				4AA0762E1ED5EC6000F0461E /* Bubble Sort */,
+				4ACC9C321ED8A218003D8328 /* Insertion Sort */,
 				4AFF924E1ECCDCD8004B5A25 /* Linear Search */,
 				4AFF924A1ECCDCAE004B5A25 /* Info.plist */,
+				4ACC9C351ED8A40D003D8328 /* TestsHelper.h */,
+				4ACC9C361ED8A40D003D8328 /* TestsHelper.m */,
 			);
 			path = AlgorithmsTests;
 			sourceTree = "<group>";
@@ -281,6 +311,7 @@
 				4A9FEB361ED75A2900B39236 /* LinearSearch.m in Sources */,
 				4A9FEB2A1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
 				4A9FEB321ED75A1300B39236 /* BubbleSort.m in Sources */,
+				4ACC9C301ED89422003D8328 /* InsertionSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +320,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA076301ED5ECF600F0461E /* BubbleSortTests.m in Sources */,
+				4ACC9C341ED8A336003D8328 /* InsertionSortTests.m in Sources */,
 				4AFF92501ECCDCF0004B5A25 /* LinearSearchObjectsTests.m in Sources */,
 				4A9FEB371ED75A2900B39236 /* LinearSearch.m in Sources */,
 				4A08C9111ED6098A001781BB /* BidirectionalBubbleSortTests.m in Sources */,
 				4A76684A1ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m in Sources */,
 				4A9FEB2F1ED75A0D00B39236 /* BinarySearch.m in Sources */,
 				4A9FEB331ED75A1300B39236 /* BubbleSort.m in Sources */,
+				4ACC9C311ED89422003D8328 /* InsertionSort.m in Sources */,
+				4ACC9C371ED8A40D003D8328 /* TestsHelper.m in Sources */,
 				4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
 				4A7668561ED212BC000A3D37 /* BinarySearchInPlaceTests.m in Sources */,
 				4A1A0AA01ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m in Sources */,
