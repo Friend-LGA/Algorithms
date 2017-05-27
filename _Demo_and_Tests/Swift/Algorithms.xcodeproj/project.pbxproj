@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A08C9191ED61401001781BB /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08C9181ED61401001781BB /* BubbleSortTests.swift */; };
+		4A18DE6B1ED9CA96003DF01B /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18DE6A1ED9CA96003DF01B /* SelectionSort.swift */; };
+		4A18DE6C1ED9CA96003DF01B /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18DE6A1ED9CA96003DF01B /* SelectionSort.swift */; };
+		4A18DE6F1ED9CC18003DF01B /* SelectionSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A18DE6E1ED9CC18003DF01B /* SelectionSortTests.swift */; };
 		4A1A0AA71ED4C592003353A4 /* BinarySearchInPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A0AA61ED4C592003353A4 /* BinarySearchInPlaceTests.swift */; };
 		4A1A0AA91ED4CCDB003353A4 /* BinarySearchNotInPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A0AA81ED4CCDB003353A4 /* BinarySearchNotInPlaceTests.swift */; };
 		4A3526F11ECE0A6C00FCCA1D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3526F01ECE0A6C00FCCA1D /* main.swift */; };
@@ -44,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		4A08C9181ED61401001781BB /* BubbleSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleSortTests.swift; sourceTree = "<group>"; };
+		4A18DE6A1ED9CA96003DF01B /* SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectionSort.swift; path = ../../../Selection_Sort/Swift/SelectionSort.swift; sourceTree = "<group>"; };
+		4A18DE6E1ED9CC18003DF01B /* SelectionSortTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionSortTests.swift; sourceTree = "<group>"; };
 		4A1A0AA61ED4C592003353A4 /* BinarySearchInPlaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchInPlaceTests.swift; sourceTree = "<group>"; };
 		4A1A0AA81ED4CCDB003353A4 /* BinarySearchNotInPlaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchNotInPlaceTests.swift; sourceTree = "<group>"; };
 		4A3526ED1ECE0A6C00FCCA1D /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +103,22 @@
 			name = "Bubble Sort";
 			sourceTree = "<group>";
 		};
+		4A18DE691ED9CA3C003DF01B /* Selection Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A18DE6A1ED9CA96003DF01B /* SelectionSort.swift */,
+			);
+			name = "Selection Sort";
+			sourceTree = "<group>";
+		};
+		4A18DE6D1ED9CBF9003DF01B /* Selection Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A18DE6E1ED9CC18003DF01B /* SelectionSortTests.swift */,
+			);
+			name = "Selection Sort";
+			sourceTree = "<group>";
+		};
 		4A1A0AA11ED4B11C003353A4 /* Binary Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +162,7 @@
 				4A08C9131ED60E0C001781BB /* Bubble Sort */,
 				4ACC9C381ED8AD77003D8328 /* Insertion Sort */,
 				4A3527031ECE0AB300FCCA1D /* Linear Search */,
+				4A18DE691ED9CA3C003DF01B /* Selection Sort */,
 				4A3526F01ECE0A6C00FCCA1D /* main.swift */,
 			);
 			path = Algorithms;
@@ -154,6 +176,7 @@
 				4A08C9171ED613EA001781BB /* Bubble Sort */,
 				4ACC9C3C1ED8AF66003D8328 /* Insertion Sort */,
 				4A3527091ECE2EBA00FCCA1D /* Linear Search */,
+				4A18DE6D1ED9CBF9003DF01B /* Selection Sort */,
 				4A3526FF1ECE0AA800FCCA1D /* Info.plist */,
 				4ACAB7591ED73EAF0058C07F /* ArrayExtension.swift */,
 				4ACC9C3F1ED8B029003D8328 /* TestsHelper.swift */,
@@ -303,6 +326,7 @@
 			files = (
 				4A3526F11ECE0A6C00FCCA1D /* main.swift in Sources */,
 				4A9FEB1D1ED759DA00B39236 /* BidirectionalBubbleSort.swift in Sources */,
+				4A18DE6B1ED9CA96003DF01B /* SelectionSort.swift in Sources */,
 				4A9FEB261ED759EB00B39236 /* LinearSearch.swift in Sources */,
 				4ACC9C3A1ED8AD8F003D8328 /* InsertionSort.swift in Sources */,
 				4A9FEB201ED759E000B39236 /* BinarySearch.swift in Sources */,
@@ -326,8 +350,10 @@
 				4ACAB75A1ED73EAF0058C07F /* ArrayExtension.swift in Sources */,
 				4A76684E1ED2048B000A3D37 /* LinearSearchEqualObjectsTests.swift in Sources */,
 				4A1A0AA71ED4C592003353A4 /* BinarySearchInPlaceTests.swift in Sources */,
+				4A18DE6C1ED9CA96003DF01B /* SelectionSort.swift in Sources */,
 				4ACC9C3B1ED8AD8F003D8328 /* InsertionSort.swift in Sources */,
 				4A1A0AA91ED4CCDB003353A4 /* BinarySearchNotInPlaceTests.swift in Sources */,
+				4A18DE6F1ED9CC18003DF01B /* SelectionSortTests.swift in Sources */,
 				4A9FEB1E1ED759DA00B39236 /* BidirectionalBubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
