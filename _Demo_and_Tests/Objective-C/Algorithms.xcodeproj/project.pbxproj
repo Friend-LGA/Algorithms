@@ -14,6 +14,9 @@
 		4A1A0AA01ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A0A9F1ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m */; };
 		4A76684A1ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7668491ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m */; };
 		4A7668561ED212BC000A3D37 /* BinarySearchInPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7668551ED212BC000A3D37 /* BinarySearchInPlaceTests.m */; };
+		4A8603D11EDB032300A128AB /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8603D01EDB032300A128AB /* MergeSort.m */; };
+		4A8603D21EDB032300A128AB /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8603D01EDB032300A128AB /* MergeSort.m */; };
+		4A8603D51EDB0C4800A128AB /* MergeSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8603D41EDB0C4800A128AB /* MergeSortTests.m */; };
 		4A9FEB2A1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */; };
 		4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */; };
 		4A9FEB2E1ED75A0D00B39236 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB2D1ED75A0D00B39236 /* BinarySearch.m */; };
@@ -51,6 +54,9 @@
 		4A1A0A9F1ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchNotInPlaceTests.m; sourceTree = "<group>"; };
 		4A7668491ED2028C000A3D37 /* LinearSearchEqualObjectsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearSearchEqualObjectsTests.m; sourceTree = "<group>"; };
 		4A7668551ED212BC000A3D37 /* BinarySearchInPlaceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchInPlaceTests.m; sourceTree = "<group>"; };
+		4A8603CF1EDB032300A128AB /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MergeSort.h; path = "../../../Merge_Sort/Objective-C/MergeSort.h"; sourceTree = "<group>"; };
+		4A8603D01EDB032300A128AB /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MergeSort.m; path = "../../../Merge_Sort/Objective-C/MergeSort.m"; sourceTree = "<group>"; };
+		4A8603D41EDB0C4800A128AB /* MergeSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSortTests.m; sourceTree = "<group>"; };
 		4A9FEB281ED75A0700B39236 /* BidirectionalBubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BidirectionalBubbleSort.h; path = "../../../Bidirectional_Bubble_Sort/Objective-C/BidirectionalBubbleSort.h"; sourceTree = "<group>"; };
 		4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BidirectionalBubbleSort.m; path = "../../../Bidirectional_Bubble_Sort/Objective-C/BidirectionalBubbleSort.m"; sourceTree = "<group>"; };
 		4A9FEB2C1ED75A0D00B39236 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinarySearch.h; path = "../../../Binary_Search/Objective-C/BinarySearch.h"; sourceTree = "<group>"; };
@@ -133,6 +139,23 @@
 			name = "Binary Search";
 			sourceTree = "<group>";
 		};
+		4A8603CE1EDB02EE00A128AB /* Merge Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A8603CF1EDB032300A128AB /* MergeSort.h */,
+				4A8603D01EDB032300A128AB /* MergeSort.m */,
+			);
+			name = "Merge Sort";
+			sourceTree = "<group>";
+		};
+		4A8603D31EDB0C3B00A128AB /* Merge Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A8603D41EDB0C4800A128AB /* MergeSortTests.m */,
+			);
+			name = "Merge Sort";
+			sourceTree = "<group>";
+		};
 		4AA076291ED5E77700F0461E /* Bubble Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +225,7 @@
 				4AA076291ED5E77700F0461E /* Bubble Sort */,
 				4ACC9C2D1ED893E3003D8328 /* Insertion Sort */,
 				4AFF91F91ECCD935004B5A25 /* Linear Search */,
+				4A8603CE1EDB02EE00A128AB /* Merge Sort */,
 				4A18DE611ED9C42B003DF01B /* Selection Sort */,
 				4AFF91F21ECCD815004B5A25 /* main.m */,
 			);
@@ -225,6 +249,7 @@
 				4AA0762E1ED5EC6000F0461E /* Bubble Sort */,
 				4ACC9C321ED8A218003D8328 /* Insertion Sort */,
 				4AFF924E1ECCDCD8004B5A25 /* Linear Search */,
+				4A8603D31EDB0C3B00A128AB /* Merge Sort */,
 				4A18DE661ED9C9E1003DF01B /* Selection Sort */,
 				4AFF924A1ECCDCAE004B5A25 /* Info.plist */,
 				4ACC9C351ED8A40D003D8328 /* TestsHelper.h */,
@@ -337,6 +362,7 @@
 				4A18DE641ED9C73A003DF01B /* SelectionSort.m in Sources */,
 				4A9FEB2A1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
 				4A9FEB321ED75A1300B39236 /* BubbleSort.m in Sources */,
+				4A8603D11EDB032300A128AB /* MergeSort.m in Sources */,
 				4ACC9C301ED89422003D8328 /* InsertionSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8603D51EDB0C4800A128AB /* MergeSortTests.m in Sources */,
 				4AA076301ED5ECF600F0461E /* BubbleSortTests.m in Sources */,
 				4ACC9C341ED8A336003D8328 /* InsertionSortTests.m in Sources */,
 				4AFF92501ECCDCF0004B5A25 /* LinearSearchObjectsTests.m in Sources */,
@@ -359,6 +386,7 @@
 				4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
 				4A7668561ED212BC000A3D37 /* BinarySearchInPlaceTests.m in Sources */,
 				4A1A0AA01ED4A9F1003353A4 /* BinarySearchNotInPlaceTests.m in Sources */,
+				4A8603D21EDB032300A128AB /* MergeSort.m in Sources */,
 				4A18DE681ED9CA0D003DF01B /* SelectionSortTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
