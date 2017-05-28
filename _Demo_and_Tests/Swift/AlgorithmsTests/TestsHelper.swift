@@ -49,7 +49,7 @@ struct TestsHelper {
         }
     }
 
-    static func clearArrays() {
+    static public func reset() {
         array.removeAll()
         sortedArrayAsc.removeAll()
         sortedArrayDesc.removeAll()

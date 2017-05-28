@@ -11,6 +11,6 @@
 @property (class, strong, nonatomic) NSMutableArray *sortedArrayAsc;
 @property (class, strong, nonatomic) NSMutableArray *sortedArrayDesc;
 
-+ (void)nullifyArrays;
++ (void)reset;
 
 @end

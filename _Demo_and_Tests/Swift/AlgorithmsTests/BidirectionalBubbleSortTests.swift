@@ -10,7 +10,7 @@ class BidirectionalBubbleSortTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        TestsHelper.clearArrays()
+        TestsHelper.reset()
     }
 
     override func tearDown() {

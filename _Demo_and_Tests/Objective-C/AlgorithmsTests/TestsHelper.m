@@ -47,7 +47,7 @@ static NSMutableArray *_sortedArrayDesc;
     _sortedArrayDesc = sortedArrayDesc;
 }
 
-+ (void)nullifyArrays {
++ (void)reset {
     self.array = nil;
     self.sortedArrayAsc = nil;
     self.sortedArrayDesc = nil;

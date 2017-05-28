@@ -16,7 +16,7 @@
 - (void)setUp {
     [super setUp];
 
-    [TestsHelper nullifyArrays];
+    [TestsHelper reset];
 }
 
 - (void)tearDown {
