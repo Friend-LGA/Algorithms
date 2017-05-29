@@ -20,6 +20,9 @@
 		4A9A27061EDC7B2000607337 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A27051EDC7B2000607337 /* QuickSort.m */; };
 		4A9A27071EDC7B2000607337 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A27051EDC7B2000607337 /* QuickSort.m */; };
 		4A9A270A1EDC7EFC00607337 /* QuickSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A27091EDC7EFC00607337 /* QuickSortTests.m */; };
+		4A9A27151EDC91B600607337 /* ShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A27141EDC91B600607337 /* ShellSort.m */; };
+		4A9A27161EDC91B600607337 /* ShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A27141EDC91B600607337 /* ShellSort.m */; };
+		4A9A27191EDC972500607337 /* ShellSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A27181EDC972500607337 /* ShellSortTests.m */; };
 		4A9FEB2A1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */; };
 		4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */; };
 		4A9FEB2E1ED75A0D00B39236 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9FEB2D1ED75A0D00B39236 /* BinarySearch.m */; };
@@ -63,6 +66,9 @@
 		4A9A27041EDC7B2000607337 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuickSort.h; path = "../../../Quick_Sort/Objective-C/QuickSort.h"; sourceTree = "<group>"; };
 		4A9A27051EDC7B2000607337 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuickSort.m; path = "../../../Quick_Sort/Objective-C/QuickSort.m"; sourceTree = "<group>"; };
 		4A9A27091EDC7EFC00607337 /* QuickSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSortTests.m; sourceTree = "<group>"; };
+		4A9A27131EDC91B600607337 /* ShellSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellSort.h; path = "../../../Shell_Sort/Objective-C/ShellSort.h"; sourceTree = "<group>"; };
+		4A9A27141EDC91B600607337 /* ShellSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellSort.m; path = "../../../Shell_Sort/Objective-C/ShellSort.m"; sourceTree = "<group>"; };
+		4A9A27181EDC972500607337 /* ShellSortTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellSortTests.m; sourceTree = "<group>"; };
 		4A9FEB281ED75A0700B39236 /* BidirectionalBubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BidirectionalBubbleSort.h; path = "../../../Bidirectional_Bubble_Sort/Objective-C/BidirectionalBubbleSort.h"; sourceTree = "<group>"; };
 		4A9FEB291ED75A0700B39236 /* BidirectionalBubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BidirectionalBubbleSort.m; path = "../../../Bidirectional_Bubble_Sort/Objective-C/BidirectionalBubbleSort.m"; sourceTree = "<group>"; };
 		4A9FEB2C1ED75A0D00B39236 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinarySearch.h; path = "../../../Binary_Search/Objective-C/BinarySearch.h"; sourceTree = "<group>"; };
@@ -179,6 +185,23 @@
 			name = "Quick Sort";
 			sourceTree = "<group>";
 		};
+		4A9A27121EDC919D00607337 /* Shell Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A27131EDC91B600607337 /* ShellSort.h */,
+				4A9A27141EDC91B600607337 /* ShellSort.m */,
+			);
+			name = "Shell Sort";
+			sourceTree = "<group>";
+		};
+		4A9A27171EDC970400607337 /* Shell Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A27181EDC972500607337 /* ShellSortTests.m */,
+			);
+			name = "Shell Sort";
+			sourceTree = "<group>";
+		};
 		4AA076291ED5E77700F0461E /* Bubble Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +274,7 @@
 				4A8603CE1EDB02EE00A128AB /* Merge Sort */,
 				4A9A27031EDC773B00607337 /* Quick Sort */,
 				4A18DE611ED9C42B003DF01B /* Selection Sort */,
+				4A9A27121EDC919D00607337 /* Shell Sort */,
 				4AFF91F21ECCD815004B5A25 /* main.m */,
 			);
 			path = Algorithms;
@@ -276,6 +300,7 @@
 				4A8603D31EDB0C3B00A128AB /* Merge Sort */,
 				4A9A27081EDC7EE000607337 /* Quick Sort */,
 				4A18DE661ED9C9E1003DF01B /* Selection Sort */,
+				4A9A27171EDC970400607337 /* Shell Sort */,
 				4AFF924A1ECCDCAE004B5A25 /* Info.plist */,
 				4ACC9C351ED8A40D003D8328 /* TestsHelper.h */,
 				4ACC9C361ED8A40D003D8328 /* TestsHelper.m */,
@@ -383,6 +408,7 @@
 			files = (
 				4AFF91F31ECCD815004B5A25 /* main.m in Sources */,
 				4A9FEB2E1ED75A0D00B39236 /* BinarySearch.m in Sources */,
+				4A9A27151EDC91B600607337 /* ShellSort.m in Sources */,
 				4A9FEB361ED75A2900B39236 /* LinearSearch.m in Sources */,
 				4A18DE641ED9C73A003DF01B /* SelectionSort.m in Sources */,
 				4A9A27061EDC7B2000607337 /* QuickSort.m in Sources */,
@@ -399,6 +425,7 @@
 			files = (
 				4A8603D51EDB0C4800A128AB /* MergeSortTests.m in Sources */,
 				4A9A270A1EDC7EFC00607337 /* QuickSortTests.m in Sources */,
+				4A9A27161EDC91B600607337 /* ShellSort.m in Sources */,
 				4AA076301ED5ECF600F0461E /* BubbleSortTests.m in Sources */,
 				4ACC9C341ED8A336003D8328 /* InsertionSortTests.m in Sources */,
 				4AFF92501ECCDCF0004B5A25 /* LinearSearchObjectsTests.m in Sources */,
@@ -408,6 +435,7 @@
 				4A9FEB2F1ED75A0D00B39236 /* BinarySearch.m in Sources */,
 				4A9FEB331ED75A1300B39236 /* BubbleSort.m in Sources */,
 				4ACC9C311ED89422003D8328 /* InsertionSort.m in Sources */,
+				4A9A27191EDC972500607337 /* ShellSortTests.m in Sources */,
 				4ACC9C371ED8A40D003D8328 /* TestsHelper.m in Sources */,
 				4A18DE651ED9C73A003DF01B /* SelectionSort.m in Sources */,
 				4A9FEB2B1ED75A0700B39236 /* BidirectionalBubbleSort.m in Sources */,
