@@ -30,7 +30,7 @@
 
     NSUInteger firstCounter = 0;
     NSUInteger secondCounter = 0;
-    NSMutableArray *resultArray = [NSMutableArray new];
+    NSMutableArray *resultArray = [NSMutableArray arrayWithCapacity:firstArrayCount + secondArrayCount];
 
     while(firstCounter < firstArrayCount || secondCounter < secondArrayCount) {
         if (firstCounter == firstArrayCount) {

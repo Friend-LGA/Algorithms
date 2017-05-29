@@ -22,23 +22,23 @@ struct InsertionSort {
             return array
         }
 
-        var result = array!
+        var resultArray = array!
 
         for i in 1..<arrayCount {
-            let current = result[i]
+            let currentValue = resultArray[i]
 
-            for index in stride(from: i, to: 0, by: -1) {
-                let prevIndex = index - 1
-                let prev = result[prevIndex]
+            for j in stride(from: i, to: 0, by: -1) {
+                let prevIndex = j - 1
+                let prevValue = resultArray[prevIndex]
 
-                if (order == .ASC && ((prev != nil && current == nil) || (prev != nil && current != nil && prev! > current!))) ||
-                    (order == .DESC && ((prev == nil && current != nil) || (prev != nil && current != nil && prev! < current!))) {
-                    swap(&result[prevIndex], &result[index])
+                if (order == .ASC && ((prevValue != nil && currentValue == nil) || (prevValue != nil && currentValue != nil && prevValue! > currentValue!))) ||
+                    (order == .DESC && ((prevValue == nil && currentValue != nil) || (prevValue != nil && currentValue != nil && prevValue! < currentValue!))) {
+                    swap(&resultArray[prevIndex], &resultArray[j])
                 }
             }
         }
 
-        return result;
+        return resultArray;
     }
 
 }

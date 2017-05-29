@@ -30,15 +30,15 @@ struct LinearSearch {
             return []
         }
 
-        var result: [UInt] = []
+        var resultArray: [UInt] = []
 
         for i in 0..<array!.count {
             if value == array![i] {
-                result.append(UInt(i))
+                resultArray.append(UInt(i))
             }
         }
 
-        return result
+        return resultArray
     }
 
     // MARK: - Objects
@@ -64,15 +64,15 @@ struct LinearSearch {
             return []
         }
 
-        var result: [UInt] = []
+        var resultArray: [UInt] = []
 
         for i in 0..<array!.count {
             if object === array![i] {
-                result.append(UInt(i))
+                resultArray.append(UInt(i))
             }
         }
 
-        return result
+        return resultArray
     }
 
     // MARK: - Equal Objects
@@ -98,15 +98,15 @@ struct LinearSearch {
             return []
         }
 
-        var result: [UInt] = []
+        var resultArray: [UInt] = []
 
         for i in 0..<array!.count {
             if object!.isEqual(to: array![i]) {
-                result.append(UInt(i))
+                resultArray.append(UInt(i))
             }
         }
         
-        return result
+        return resultArray
     }
 
 }

@@ -17,13 +17,16 @@
     }
 
     for (NSUInteger i = arrayCount; i > 0; i--) {
-        for (NSUInteger index = 0; index < i - 1; index++) {
-            NSUInteger nextIndex = index + 1;
-            NSComparisonResult comparisonResult = [array[index] compare:array[nextIndex]];
+        for (NSUInteger j = 0; j < i - 1; j++) {
+            NSNumber *currentNumber = array[j];
+            NSUInteger nextIndex = j + 1;
+            NSNumber *nextNumber = array[nextIndex];
+
+            NSComparisonResult comparisonResult = [currentNumber compare:nextNumber];
 
             if ((order == BubbleSortOrderAsc && comparisonResult == NSOrderedDescending) ||
                 (order == BubbleSortOrderDesc && comparisonResult == NSOrderedAscending)) {
-                [array exchangeObjectAtIndex:index withObjectAtIndex:nextIndex];
+                [array exchangeObjectAtIndex:j withObjectAtIndex:nextIndex];
             }
         }
     }

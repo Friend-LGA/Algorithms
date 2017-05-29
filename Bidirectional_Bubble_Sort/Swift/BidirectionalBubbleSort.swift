@@ -22,43 +22,43 @@ struct BidirectionalBubbleSort {
             return array
         }
 
-        var result = array!
+        var resultArray = array!
 
         for i in 0...Int(ceil(Double(arrayCount) / 2.0)) {
             let lastIndex = arrayCount - i - 1
 
-            for index in stride(from: i, to: lastIndex - 1, by: 1) {
-                let nextIndex = index + 1
-                let current = result[index]
-                let next = result[nextIndex]
+            for j in stride(from: i, to: lastIndex - 1, by: 1) {
+                let currentValue = resultArray[j]
+                let nextIndex = j + 1
+                let nextValue = resultArray[nextIndex]
 
-                if (order == .ASC && isShouldChangeForAsc(current: current, next: next)) ||
-                    (order == .DESC && isShouldChangeForDesc(current: current, next: next)) {
-                    swap(&result[index], &result[nextIndex])
+                if (order == .ASC && isShouldChangeForAsc(currentValue: currentValue, nextValue: nextValue)) ||
+                    (order == .DESC && isShouldChangeForDesc(currentValue: currentValue, nextValue: nextValue)) {
+                    swap(&resultArray[j], &resultArray[nextIndex])
                 }
             }
 
-            for index in stride(from: lastIndex, to: i, by: -1) {
-                let nextIndex = index - 1
-                let current = result[index]
-                let next = result[nextIndex]
+            for j in stride(from: lastIndex, to: i, by: -1) {
+                let currentValue = resultArray[j]
+                let prevIndex = j - 1
+                let prevValue = resultArray[prevIndex]
 
-                if (order == .DESC && isShouldChangeForAsc(current: current, next: next)) ||
-                    (order == .ASC && isShouldChangeForDesc(current: current, next: next)) {
-                    swap(&result[index], &result[nextIndex])
+                if (order == .DESC && isShouldChangeForAsc(currentValue: currentValue, nextValue: prevValue)) ||
+                    (order == .ASC && isShouldChangeForDesc(currentValue: currentValue, nextValue: prevValue)) {
+                    swap(&resultArray[j], &resultArray[prevIndex])
                 }
             }
         }
 
-        return result;
+        return resultArray;
     }
 
-    static private func isShouldChangeForAsc<T: Comparable>(current: T?, next: T?) -> Bool {
-        return (current != nil && next == nil) || (current != nil && next != nil && current! > next!)
+    static private func isShouldChangeForAsc<T: Comparable>(currentValue: T?, nextValue: T?) -> Bool {
+        return (currentValue != nil && nextValue == nil) || (currentValue != nil && nextValue != nil && currentValue! > nextValue!)
     }
 
-    static private func isShouldChangeForDesc<T: Comparable>(current: T?, next: T?) -> Bool {
-        return (current == nil && next != nil) || (current != nil && next != nil && current! < next!)
+    static private func isShouldChangeForDesc<T: Comparable>(currentValue: T?, nextValue: T?) -> Bool {
+        return (currentValue == nil && nextValue != nil) || (currentValue != nil && nextValue != nil && currentValue! < nextValue!)
     }
 
 }

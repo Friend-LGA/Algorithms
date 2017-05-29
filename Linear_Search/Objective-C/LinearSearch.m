@@ -30,15 +30,15 @@
         return @[];
     }
 
-    NSMutableArray *result = [NSMutableArray new];
+    NSMutableArray *resultArray = [NSMutableArray new];
 
     for (NSUInteger i = 0; i < array.count; i++) {
         if (object == array[i]) {
-            [result addObject:@(i)];
+            [resultArray addObject:@(i)];
         }
     }
 
-    return result.copy;
+    return resultArray.copy;
 }
 
 #pragma mark - Equal Objects
@@ -62,15 +62,15 @@
         return @[];
     }
 
-    NSMutableArray *result = [NSMutableArray new];
+    NSMutableArray *resultArray = [NSMutableArray new];
 
     for (NSUInteger i = 0; i < array.count; i++) {
         if ([object isEqualTo:array[i]]) {
-            [result addObject:@(i)];
+            [resultArray addObject:@(i)];
         }
     }
 
-    return result.copy;
+    return resultArray.copy;
 }
 
 @end

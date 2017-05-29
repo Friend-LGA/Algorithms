@@ -22,22 +22,22 @@ struct BubbleSort {
             return array
         }
 
-        var result = array!
+        var resultArray = array!
 
         for i in stride(from: arrayCount, to: 0, by: -1) {
-            for index in 0..<(i - 1) {
-                let nextIndex = index + 1
-                let current = result[index]
-                let next = result[nextIndex]
+            for j in 0..<(i - 1) {
+                let currentValue = resultArray[j]
+                let nextIndex = j + 1
+                let nextValue = resultArray[nextIndex]
 
-                if (order == .ASC && ((current != nil && next == nil) || (current != nil && next != nil && current! > next!))) ||
-                    (order == .DESC && ((current == nil && next != nil) || (current != nil && next != nil && current! < next!))) {
-                    swap(&result[index], &result[nextIndex])
+                if (order == .ASC && ((currentValue != nil && nextValue == nil) || (currentValue != nil && nextValue != nil && currentValue! > nextValue!))) ||
+                    (order == .DESC && ((currentValue == nil && nextValue != nil) || (currentValue != nil && nextValue != nil && currentValue! < nextValue!))) {
+                    swap(&resultArray[j], &resultArray[nextIndex])
                 }
             }
         }
 
-        return result;
+        return resultArray;
     }
 
 }

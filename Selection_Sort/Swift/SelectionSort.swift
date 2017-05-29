@@ -22,28 +22,28 @@ struct SelectionSort {
             return array
         }
 
-        var result = array!
+        var resultArray = array!
 
         for i in 0..<(arrayCount - 1) {
             var selectedIndex = i
-            var selected = result[selectedIndex]
+            var selectedValue = resultArray[selectedIndex]
 
-            for index in (i + 1)..<arrayCount {
-                let current = result[index]
+            for j in (i + 1)..<arrayCount {
+                let currentValue = resultArray[j]
 
-                if (order == .ASC && ((selected != nil && current == nil) || (selected != nil && current != nil && current! < selected!))) ||
-                    (order == .DESC && ((selected == nil && current != nil) || (selected != nil && current != nil && current! > selected!))) {
-                        selectedIndex = index
-                        selected = result[selectedIndex]
+                if (order == .ASC && ((selectedValue != nil && currentValue == nil) || (selectedValue != nil && currentValue != nil && currentValue! < selectedValue!))) ||
+                    (order == .DESC && ((selectedValue == nil && currentValue != nil) || (selectedValue != nil && currentValue != nil && currentValue! > selectedValue!))) {
+                        selectedIndex = j
+                        selectedValue = resultArray[selectedIndex]
                 }
             }
 
             if (selectedIndex != i) {
-                swap(&result[i], &result[selectedIndex])
+                swap(&resultArray[i], &resultArray[selectedIndex])
             }
         }
 
-        return result;
+        return resultArray;
     }
 
 }

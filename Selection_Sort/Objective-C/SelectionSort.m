@@ -18,16 +18,16 @@
 
     for (NSUInteger i = 0; i < arrayCount - 1; i++) {
         NSUInteger selectedIndex = i;
-        NSNumber *selected = array[selectedIndex];
+        NSNumber *selectedNumber = array[selectedIndex];
 
-        for (NSUInteger index = i + 1; index < arrayCount; index++) {
-            NSNumber *current = array[index];
-            NSComparisonResult comparisonResult = [selected compare:current];
+        for (NSUInteger j = i + 1; j < arrayCount; j++) {
+            NSNumber *current = array[j];
+            NSComparisonResult comparisonResult = [selectedNumber compare:current];
 
             if ((order == SelectionSortOrderAsc && comparisonResult == NSOrderedDescending) ||
                 (order == SelectionSortOrderDesc && comparisonResult == NSOrderedAscending)) {
-                selectedIndex = index;
-                selected = array[selectedIndex];
+                selectedIndex = j;
+                selectedNumber = array[selectedIndex];
             }
         }
 

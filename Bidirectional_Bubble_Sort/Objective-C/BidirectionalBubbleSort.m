@@ -19,21 +19,26 @@
     for (NSUInteger i = 0; i < ceil(arrayCount / 2.0); i++) {
         NSUInteger lastIndex = arrayCount - i - 1;
 
-        for (NSUInteger index = i; index < lastIndex; index++) {
-            NSUInteger nextIndex = index + 1;
-            NSComparisonResult comparisonResult = [array[index] compare:array[nextIndex]];
+        for (NSUInteger j = i; j < lastIndex; j++) {
+            NSNumber *currentNumber = array[j];
+            NSUInteger nextIndex = j + 1;
+            NSNumber *nextNumber = array[nextIndex];
+            NSComparisonResult comparisonResult = [currentNumber compare:nextNumber];
 
             if ([self isShouldChange:order comparisonResult:comparisonResult]) {
-                [array exchangeObjectAtIndex:index withObjectAtIndex:nextIndex];
+                [array exchangeObjectAtIndex:j withObjectAtIndex:nextIndex];
             }
         }
 
-        for (NSUInteger index = lastIndex; index > i; index--) {
-            NSUInteger nextIndex = index - 1;
-            NSComparisonResult comparisonResult = [array[nextIndex] compare:array[index]];
+        for (NSUInteger j = lastIndex; j > i; j--) {
+            NSNumber *currentNumber = array[j];
+            NSUInteger prevIndex = j - 1;
+            NSNumber *prevNumber = array[prevIndex];
+
+            NSComparisonResult comparisonResult = [prevNumber compare:currentNumber];
 
             if ([self isShouldChange:order comparisonResult:comparisonResult]) {
-                [array exchangeObjectAtIndex:nextIndex withObjectAtIndex:index];
+                [array exchangeObjectAtIndex:prevIndex withObjectAtIndex:j];
             }
         }
     }
