@@ -34,9 +34,9 @@
 #pragma mark - Integers (point to the same memory address)
 
 - (void)testInteger {
-    NSUInteger result = [LinearSearch indexOfEqualObject:@1.0 inArray:self.array];
+    NSUInteger resultIndex = [LinearSearch indexOfEqualObject:@1.0 inArray:self.array];
 
-    XCTAssert(result == 2);
+    XCTAssert(resultIndex == 2);
 }
 
 - (void)testIntegers {
@@ -49,9 +49,9 @@
 #pragma mark - Floats (point to the same memory address)
 
 - (void)testFloat {
-    NSUInteger result = [LinearSearch indexOfEqualObject:@1.5 inArray:self.array];
+    NSUInteger resultIndex = [LinearSearch indexOfEqualObject:@1.5 inArray:self.array];
 
-    XCTAssert(result == 6);
+    XCTAssert(resultIndex == 6);
 }
 
 - (void)testFloats {
@@ -64,9 +64,9 @@
 #pragma mark - Not Included
 
 - (void)testNotIncludedObject {
-    NSUInteger result = [LinearSearch indexOfEqualObject:@100 inArray:self.array];
+    NSUInteger resultIndex = [LinearSearch indexOfEqualObject:@100 inArray:self.array];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testNotIncludedObjects {
@@ -78,9 +78,9 @@
 #pragma mark - Nil Search Object
 
 - (void)testNilSearchObject {
-    NSUInteger result = [LinearSearch indexOfEqualObject:nil inArray:self.array];
+    NSUInteger resultIndex = [LinearSearch indexOfEqualObject:nil inArray:self.array];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testNilSearchObjects {
@@ -92,9 +92,9 @@
 #pragma mark - Nil Array
 
 - (void)testNilArrayForObject {
-    NSUInteger result = [LinearSearch indexOfEqualObject:@YES inArray:nil];
+    NSUInteger resultIndex = [LinearSearch indexOfEqualObject:@YES inArray:nil];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testNilArrayForObjects {

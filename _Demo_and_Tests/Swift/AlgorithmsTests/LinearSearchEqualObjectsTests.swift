@@ -21,71 +21,71 @@ class LinearSearchEqualObjectsTests: XCTestCase {
     // MARK: - Integers (point to the same memory adress)
 
     func testInteger() {
-        let result = LinearSearch.index(ofEqualObject: NSNumber.init(value: 1), in: objectsArray)
+        let resultIndex = LinearSearch.index(ofEqualObject: NSNumber.init(value: 1), in: objectsArray)
 
-        XCTAssert(result == 2)
+        XCTAssert(resultIndex == 2)
     }
 
     func testIntegers() {
-        let result = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: 1), in: objectsArray)
+        let resultArray = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: 1), in: objectsArray)
 
-        XCTAssert(result == [2, 3])
+        XCTAssert(resultArray == [2, 3])
     }
 
     // MARK: - Floats
 
     func testFloat() {
-        let result = LinearSearch.index(ofEqualObject: NSNumber.init(value: 1.5), in: objectsArray)
+        let resultIndex = LinearSearch.index(ofEqualObject: NSNumber.init(value: 1.5), in: objectsArray)
 
-        XCTAssert(result == 6)
+        XCTAssert(resultIndex == 6)
     }
 
     func testFloats() {
-        let result = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: 1.5), in: objectsArray)
+        let resultArray = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: 1.5), in: objectsArray)
 
-        XCTAssert(result == [6, 7])
+        XCTAssert(resultArray == [6, 7])
     }
 
     // MARK: - Not Included
 
     func testNotIncludedObject() {
-        let result = LinearSearch.index(ofEqualObject: NSNumber.init(value: 100), in: objectsArray)
+        let resultIndex = LinearSearch.index(ofEqualObject: NSNumber.init(value: 100), in: objectsArray)
 
-        XCTAssert(result == nil)
+        XCTAssert(resultIndex == nil)
     }
 
     func testNotIncludedObjects() {
-        let result = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: 100), in: objectsArray)
+        let resultArray = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: 100), in: objectsArray)
 
-        XCTAssert(result == [])
+        XCTAssert(resultArray == [])
     }
 
     // MARK: - Nil Search Object
 
     func testNilSearchObject() {
-        let result = LinearSearch.index(ofEqualObject: nil, in: objectsArray)
+        let resultIndex = LinearSearch.index(ofEqualObject: nil, in: objectsArray)
 
-        XCTAssert(result == nil)
+        XCTAssert(resultIndex == nil)
     }
 
     func testNilSearchObjects() {
-        let result = LinearSearch.indexes(ofEqualObject: nil, in: objectsArray)
+        let resultArray = LinearSearch.indexes(ofEqualObject: nil, in: objectsArray)
 
-        XCTAssert(result == [])
+        XCTAssert(resultArray == [])
     }
 
     // MARK: - Nil Array
 
     func testNilArrayForObject() {
-        let result = LinearSearch.index(ofEqualObject: NSNumber.init(value: true), in: nil)
+        let resultIndex = LinearSearch.index(ofEqualObject: NSNumber.init(value: true), in: nil)
 
-        XCTAssert(result == nil)
+        XCTAssert(resultIndex == nil)
     }
 
     func testNilArrayForObjects() {
-        let result = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: true), in: nil)
+        let resultArray = LinearSearch.indexes(ofEqualObject: NSNumber.init(value: true), in: nil)
         
-        XCTAssert(result == [])
+        XCTAssert(resultArray == [])
     }
 
 }

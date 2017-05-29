@@ -20,52 +20,52 @@ class BubbleSortTests: XCTestCase {
     // MARK: -
 
     func testAscOdd() {
-        let result = BubbleSort.sort(TestsHelper.array, order: .ASC)
+        let resultArray = BubbleSort.sort(TestsHelper.array, order: .ASC)
 
-        XCTAssert(result ?= TestsHelper.sortedArrayAsc)
+        XCTAssert(resultArray ?= TestsHelper.sortedArrayAsc)
     }
 
     func testAscEven() {
         TestsHelper.array.append(100)
         TestsHelper.sortedArrayAsc.append(100)
 
-        let result = BubbleSort.sort(TestsHelper.array, order: .ASC)
+        let resultArray = BubbleSort.sort(TestsHelper.array, order: .ASC)
 
-        XCTAssert(result ?= TestsHelper.sortedArrayAsc)
+        XCTAssert(resultArray ?= TestsHelper.sortedArrayAsc)
     }
 
     func testDescOdd() {
-        let result = BubbleSort.sort(TestsHelper.array, order: .DESC)
+        let resultArray = BubbleSort.sort(TestsHelper.array, order: .DESC)
 
-        XCTAssert(result ?= TestsHelper.sortedArrayDesc)
+        XCTAssert(resultArray ?= TestsHelper.sortedArrayDesc)
     }
 
     func testDescEven() {
         TestsHelper.array.append(100)
         TestsHelper.sortedArrayDesc.insert(100, at: 0)
 
-        let result = BubbleSort.sort(TestsHelper.array, order: .DESC)
+        let resultArray = BubbleSort.sort(TestsHelper.array, order: .DESC)
 
-        XCTAssert(result ?= TestsHelper.sortedArrayDesc)
+        XCTAssert(resultArray ?= TestsHelper.sortedArrayDesc)
     }
 
     func testNilArray() {
         let nilArray: [Int]? = nil
-        let result = BubbleSort.sort(nilArray, order: .ASC)
+        let resultArray = BubbleSort.sort(nilArray, order: .ASC)
 
-        XCTAssert(result == nil);
+        XCTAssert(resultArray == nil);
     }
 
     func testEmptyArray() {
-        let result = BubbleSort.sort([] as [Int], order: .ASC)
+        let resultArray = BubbleSort.sort([] as [Int], order: .ASC)
 
-        XCTAssert(result ?= []);
+        XCTAssert(resultArray ?= []);
     }
 
     func testArrayWithOneNumber() {
-        let result = BubbleSort.sort([0], order: .ASC)
+        let resultArray = BubbleSort.sort([0], order: .ASC)
         
-        XCTAssert(result ?= [0]);
+        XCTAssert(resultArray ?= [0]);
     }
 
 }

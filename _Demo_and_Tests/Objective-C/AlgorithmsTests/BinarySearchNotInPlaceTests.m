@@ -33,81 +33,81 @@
 #pragma mark -
 
 - (void)testCase1 {
-    NSInteger result = [BinarySearch indexOfNumber:@(-1.5) inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@(-1.5) inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 0);
+    XCTAssert(resultIndex == 0);
 }
 
 - (void)testCase2 {
-    NSInteger result = [BinarySearch indexOfNumber:@(-1) inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@(-1) inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 1);
+    XCTAssert(resultIndex == 1);
 }
 
 - (void)testCase3 {
-    NSInteger result = [BinarySearch indexOfNumber:@(-0.5) inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@(-0.5) inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 2);
+    XCTAssert(resultIndex == 2);
 }
 
 - (void)testCase4 {
-    NSInteger result = [BinarySearch indexOfNumber:@0 inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@0 inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 3);
+    XCTAssert(resultIndex == 3);
 }
 
 - (void)testCase5 {
-    NSInteger result = [BinarySearch indexOfNumber:@0.5 inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@0.5 inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 4);
+    XCTAssert(resultIndex == 4);
 }
 
 - (void)testCase6 {
-    NSInteger result = [BinarySearch indexOfNumber:@1 inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@1 inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 5);
+    XCTAssert(resultIndex == 5);
 }
 
 - (void)testCase7 {
-    NSInteger result = [BinarySearch indexOfNumber:@1.5 inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@1.5 inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == 6);
+    XCTAssert(resultIndex == 6);
 }
 
 - (void)testNotIncluded {
-    NSInteger result = [BinarySearch indexOfNumber:@100 inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@100 inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testNilSearchNumber {
-    NSInteger result = [BinarySearch indexOfNumber:nil inSortedArray:self.array inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:nil inSortedArray:self.array inPlace:NO];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testNilArray {
-    NSInteger result = [BinarySearch indexOfNumber:@0 inSortedArray:nil inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@0 inSortedArray:nil inPlace:NO];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testEmptyArray {
-    NSInteger result = [BinarySearch indexOfNumber:@0 inSortedArray:@[] inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@0 inSortedArray:@[] inPlace:NO];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 - (void)testArrayWithOneNumber1 {
-    NSInteger result = [BinarySearch indexOfNumber:@0 inSortedArray:@[@0] inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@0 inSortedArray:@[@0] inPlace:NO];
 
-    XCTAssert(result == 0);
+    XCTAssert(resultIndex == 0);
 }
 
 - (void)testArrayWithOneNumber2 {
-    NSInteger result = [BinarySearch indexOfNumber:@100 inSortedArray:@[@0] inPlace:NO];
+    NSInteger resultIndex = [BinarySearch indexOfNumber:@100 inSortedArray:@[@0] inPlace:NO];
 
-    XCTAssert(result == NSNotFound);
+    XCTAssert(resultIndex == NSNotFound);
 }
 
 @end
